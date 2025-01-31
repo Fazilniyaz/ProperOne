@@ -19,7 +19,7 @@ export const getProducts =
       console.log(process.env.NODE_ENV);
       let link;
       // if (process.env.NODE_ENV.trim() == "production") {
-      link = `http://13.60.193.109/:8000/api/v1/products?page=${currentPage}`;
+      link = `http://13.60.193.109:8000/api/v1/products?page=${currentPage}`;
       // } else {
       // link = `/api/v1/products?page=${currentPage}`;
       // }

@@ -11,7 +11,7 @@ export const getProduct = (id) => async (dispatch) => {
     dispatch(productRequest());
     // if (process.env.NODE_ENV.trim() == "production") {
     const { data } = await axios.get(
-      `http://13.60.193.109/:8000/api/v1/product/${id}`
+      `http://13.60.193.109:8000/api/v1/product/${id}`
     ); // The URL is correct
     dispatch(productSuccess(data));
     // } else {
